@@ -2,7 +2,7 @@
   "name": "next-tailwind-mui",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 5000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,6 +15,7 @@
     "@mui/icons-material": "^5.3.1",
     "@mui/material": "^5.4.0",
     "aos": "^2.3.4",
+    "framer-motion": "^6.2.8",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"

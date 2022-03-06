@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
-
+import { motion } from "framer-motion"
 const Home: NextPage = () => {
   return (
     <div>
@@ -13,7 +13,12 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="">
-        <Button className="text-4xl bg-white m-4">Hello World</Button>
+        <Button whileHover={{
+    scale: 1.2,
+    transition: { duration: 0.1 }
+  }}
+  whileTap={{ scale: 0.9 }}
+ component={motion.button} className="text-4xl bg-white m-4">Hello World</Button>
       </main>
 
       <footer></footer>
